@@ -23,7 +23,6 @@ cabal.project.local~
 .ghc.environment.*
 
 # Project-specific
-# flake.nix
 .direnv
 .envrc
 complete/

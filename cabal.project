@@ -372,22 +372,19 @@ source-repository-package
   type: git
   location: https://github.com/vshabanov/ekg-json
   tag: 00ebe7211c981686e65730b7144fbf5350462608
-  --sha256: 1zvjm3pb38w0ijig5wk5mdkzcszpmlp5d4zxvks2jk1rkypi8gsm
 
 -- Should follow cardano-wallet
 source-repository-package
   type: git
   location: https://github.com/input-output-hk/hedgehog-extras
   tag: 714ee03a5a786a05fc57ac5d2f1c2edce4660d85
-  --sha256: 1qa4mm36xynaf17990ijmzww0ij8hjrc0vw5nas6d0zx6q9hb978
 
 -- Temporary workaround for duplicate module issue in moo package
 source-repository-package
   type: git
   location: https://github.com/input-output-hk/moo
   tag: 8c487714fbfdea66188fcb85053e7e292e0cc348
-  --sha256: 1mdj218hgh7s5a6b9k14vg9i06zxah0wa42ycdgh245izs8nfv0x
 
 -- Required if not installing IOG libsodium fork: use ported C code
 package cardano-crypto-praos
---  flags: -external-libsodium-vrf
+  flags: -external-libsodium-vrf

@@ -12,6 +12,11 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE DataKinds #-}
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
+{-# OPTIONS_GHC -fno-ignore-interface-pragmas #-}
+{-# OPTIONS_GHC -fno-omit-interface-pragmas #-}
+{-# OPTIONS_GHC -fobject-code #-}
+
 module MathBountyV2 where
 
 --PlutusTx
@@ -49,8 +54,6 @@ import           Prelude                              (IO, Semigroup (..), Strin
 import           Text.Printf                          (printf)
 import           Control.Monad.Freer.Extras           as Extras
 
-
-{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 
 --THE ON-CHAIN CODE
 
