@@ -44,6 +44,11 @@ This repository contains a sample Plutus project and a guided walkthrough for co
     substituters = https://cache.iog.io https://cache.nixos.org https://digitallyinduced.cachix.org https://all-hies.cachix.org
     trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE= all-hies.cachix.org-1:JjrzAOEUsD9ZMt8fdFbzo3jNAyEWlPAwdVuHw4RD43k=
 
+    # Step 3: Avoid unwanted garbage collection with nix-direnv
+
+    keep-outputs = true;
+    keep-derivations = true;
+    ```
   * **IMPORTANT!** You must restart the `nix-daemon` to apply the changes
 
     **Linux:**
