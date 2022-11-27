@@ -46,8 +46,8 @@ This repository contains a sample Plutus project and a guided walkthrough for co
 
     # Step 3: Avoid unwanted garbage collection with nix-direnv
 
-    keep-outputs = true;
-    keep-derivations = true;
+    keep-outputs = true
+    keep-derivations = true
     ```
   * **IMPORTANT!** You must restart the `nix-daemon` to apply the changes
 
